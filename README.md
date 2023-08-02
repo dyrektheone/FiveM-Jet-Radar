@@ -8,16 +8,16 @@ There is nothing much to say. Look through the configs, read the documentation b
 Get in a supported vehicle, fly above the "EnableAbove" config options and boom!
 
 ## How it works
-So I used an interesting approach here, the LUA client sends the nearby vehicles regulalry but the NUI ONLY updates when the "scanner" made 1 turn.
+So I used an interesting approach here, the LUA client sends the nearby vehicles regulalry but the NUI ONLY updates when the "scanner" made 1 turn, and is back at the very top.
 Check the FiveM forum page, and the video, you'll understand it!
 
 ## Features
 ### Friendly vehicle system
 The resource provides 4 client events
-**jet_radar:registerVehicleAsFriendly**    < ARGUMENT: vehicle | register it as friendly
-**jet_radar:removeVehicleAsFriendly**      < ARGUMENT: vehicle | remove from friendlies
-**jet_radar:clearFriendlyVehicles**        < NO ARGUMENTS      | clears the "friendlyVehicles" array back to empty
-**jet_radar:getFriendlyVehicles**          < NO ARGUMENTS      | returns the registered friendly vehicles
+- **jet_radar:registerVehicleAsFriendly**    < ARGUMENT: vehicle | register it as friendly
+- **jet_radar:removeVehicleAsFriendly**      < ARGUMENT: vehicle | remove from friendlies
+- **jet_radar:clearFriendlyVehicles**        < NO ARGUMENTS      | clears the "friendlyVehicles" array back to empty
+- **jet_radar:getFriendlyVehicles**          < NO ARGUMENTS      | returns the registered friendly vehicles
 ***Please note that these events are client-side! So for example if you trigger "jet_radar:getFriendlyVehicles" from a server-script it WON'T return anything.***
 
 ## FiveM Forum Page
