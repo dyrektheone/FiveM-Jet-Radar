@@ -18,6 +18,8 @@ The resource provides 4 client events
 - **jet_radar:removeVehicleAsFriendly**      < ARGUMENT: vehicle | remove from friendlies
 - **jet_radar:clearFriendlyVehicles**        < NO ARGUMENTS      | clears the "friendlyVehicles" array back to empty
 - **jet_radar:getFriendlyVehicles**          < NO ARGUMENTS      | returns the registered friendly vehicles
+
+
 ***Please note that these events are client-side! So for example if you trigger "jet_radar:getFriendlyVehicles" from a server-script it WON'T return anything.***
 
 ## FiveM Forum Page
