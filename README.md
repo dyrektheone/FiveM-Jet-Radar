@@ -24,6 +24,8 @@ The preview video can be found on the FiveM forum page.
 
 ### The resource contains 2 configs. One for the visual options (config.js) and one for the "logical" options (config.lua)
 
+
+
 config.js
 ![js](https://github.com/DyrekKing/FiveM-Jet-Radar/assets/68273911/72fb96b1-82ce-4ca1-958d-2ea8bdcd39e8)
 
