@@ -14,7 +14,7 @@ Check the FiveM forum page, and the video, you'll understand it!
 ## Features
 ### Friendly vehicle system
 **At the moment all "friendly vehicles" mean is that their icon on the radar will have a different color.**
-The resource provides 4 client events
+-- The resource provides 4 client events
 - **jet_radar:registerVehicleAsFriendly**    < ARGUMENT: vehicle | register it as friendly
 - **jet_radar:removeVehicleAsFriendly**      < ARGUMENT: vehicle | remove from friendlies
 - **jet_radar:clearFriendlyVehicles**        < NO ARGUMENTS      | clears the "friendlyVehicles" array back to empty
