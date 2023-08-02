@@ -2,7 +2,6 @@ local ActiveVehicle = nil
 local friendlyVehicles = {}
 
 Citizen.CreateThread(function()
-    DoScreenFadeIn(0)
     while true do Wait(500)
         local ped = PlayerPedId()
         local vehicle = GetVehiclePedIsIn(ped,false)
