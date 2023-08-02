@@ -1,7 +1,7 @@
 # FiveM-Jet-Radar
 
 ## About
-This is a STANDLONE Jet Radar project. 
+This is a STANDLONE Jet Radar project with a lot of customization options. 
 
 ## Usage
 There is nothing much to say. Look through the configs, read the documentation but basically it's the following. 
