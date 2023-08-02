@@ -24,6 +24,7 @@ Check the FiveM forum page, and the video, you'll understand it!
 ***Please note that these events are client-side! So for example if you trigger "jet_radar:getFriendlyVehicles" from a server-script it WON'T return anything.***
 
 ## FiveM Forum Page
+https://forum.cfx.re/t/free-standalone-jet-radar
 
 ## Video
 The preview video can be found on the FiveM forum page.
