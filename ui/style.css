@@ -1,0 +1,82 @@
+:root{
+  --base-color: cyan;
+  --target-color: cyan;
+  --friendly-color: cyan;
+
+  overflow: hidden !important;
+}
+
+html, .kirajzolas {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding-bottom: 10px;
+}
+
+#panel {
+	position: absolute;
+}
+
+.radar{
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  --grid-bg: radial-gradient(
+    transparent 69%,
+    var(--base-color) 69%,
+    var(--base-color) 70%,
+    transparent 70%
+  );
+  --line-bg: transparent 50%, var(--base-color) 50%, transparent 50.5%;
+  background-image: conic-gradient(from var(--border-angle), transparent 10%, var(--base-color) 99%, var(--base-color) 99.5%), linear-gradient(0deg, var(--line-bg)), linear-gradient(45deg, var(--line-bg)), linear-gradient(90deg, var(--line-bg)), linear-gradient(135deg, var(--line-bg)), var(--grid-bg), var(--grid-bg), var(--grid-bg);
+  background-size: cover, cover, cover, cover, cover, 25% 25%, 50% 50%, 75% 75%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: solid 0.5vmin var(--base-color);
+  background-color: black;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+  position: relative;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+#target-container{
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.target{
+  width: 10px;
+  height: 10px;
+  background: var(--target-color);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.target-friendly{
+  background: var(--friendly-color);
+}
